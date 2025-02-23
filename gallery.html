@@ -8,10 +8,10 @@
 	<Style>
 		.gallery-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
-      gap: 16px; /* Space between items */
-      width: 90%;
-      max-width: 1200px;
+      grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+      gap: 16px; /* Space between images */
+      width: 90%; /* Use most of the screen */
+      max-width: 1200px; /* Prevent extreme stretching on large screens */
     }
 
     .gallery-item {
@@ -22,13 +22,20 @@
 
     .gallery-item img {
       width: 100%;
-      height: auto;
-      max-height: 300px; /* Optional: Control max height */
+      height: 100%;
+      max-height: 500px; /* Optional: Control max height */
       object-fit: cover; /* Make images cover their space */
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	  }
 
+      /* Responsive Design */
+    @media (max-width: 768px) {
+      .gallery-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+      }
+    }
+    
     /* Lightbox overlay style */
     .lightbox {
       display: none;
@@ -60,7 +67,7 @@
 	  </Style>
 
 	<head>
-		<title>gallery - Helios by HTML5 UP</title>
+		<title>Prints</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -104,7 +111,7 @@
 								</li>
 								<li><a href="left-sidebar.html">Ceramics</a></li>
 								<li><a href="right-sidebar.html">WIP</a></li>
-								<li><a href="no-sidebar.html">Gallery</a></li>
+								<li><a href="no-sidebar.html">Prints</a></li>
 							</ul>
 						</nav>
 
@@ -121,16 +128,12 @@
 									Blah blah blah blah about linocuts. Or just cut this paragraph
 								</p>
 							</header>
-							<a href="#" class="image featured"><img src="images/bluemountain.JPG" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/Another process.JPG" alt="" /></a>
 
 								
 							<p>
-								Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-								posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-								lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
-								consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
-								interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
-								natoque aenean scelerisque vel lacinia mollis quam sodales congue.
+								Block prints I make every once in awhile. Stamps are created and I am able to recreate what ever you may 
+                                have interest in. 
 							</p>
 							<section>
 								<!---Trying to put a gallery thing into here ---->
